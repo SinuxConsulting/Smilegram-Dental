@@ -61,7 +61,7 @@ const Footer = () => {
             <h4 className="label-caps mb-6 opacity-50">Visit Us</h4>
             <div className="font-body text-sm space-y-3 opacity-70">
               <p>📍 Petaling Jaya, Selangor<br />Malaysia</p>
-              <p>📞 +60 00-000 0000</p>
+              <p>📞 +60 12-345 6789</p>
               <p>✉️ hello@smilegram.dental</p>
               <div className="mt-4">
                 <p className="font-medium opacity-100">Operating Hours</p>
@@ -72,14 +72,22 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
+        
         <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-body text-xs opacity-40">
             © 2026 SmileGram Dental. All rights reserved.
           </p>
-          <p className="font-body text-xs opacity-40">
-            Designed with care for confident smiles.
-          </p>
+          <div className="text-center text-xs opacity-40 font-body">
+  Designed by{" "}
+  <a
+    href="https://sinuxconsulting.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium hover:underline transition-colors text-lime-400 hover:text-lime-300"
+  >
+    Sinux Consulting
+  </a>
+</div>
         </div>
       </div>
     </footer>
