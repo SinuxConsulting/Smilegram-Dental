@@ -2,12 +2,18 @@ import { useState } from "react";
 import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import BookingModal from "@/components/BookingModal";
+import Seo from "@/components/Seo";
 
 const Contact = () => {
   const [bookingOpen, setBookingOpen] = useState(false);
 
   return (
     <main className="pt-20">
+      <Seo
+  title="Contact SmileGram Dental"
+  description="Contact SmileGram Dental to book a consultation, ask about treatments, or reach our dental clinic in Petaling Jaya by phone or WhatsApp."
+  path="/contact"
+/>
       {/* Hero */}
       <section className="section-padding porcelain-bg porcelain-grid">
         <div className="container-wide">

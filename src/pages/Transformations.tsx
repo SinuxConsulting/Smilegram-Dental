@@ -2,6 +2,7 @@ import { useState } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
 import BookingCTA from "@/components/home/BookingCTA";
 import smilePortrait from "@/assets/smile-portrait.jpg";
+import Seo from "@/components/Seo";
 
 const categories = ["All", "Whitening", "Braces / Invisalign", "Veneers", "General"];
 
@@ -25,6 +26,11 @@ const Transformations = () => {
 
   return (
     <main className="pt-20">
+      <Seo
+  title="Smile Transformations"
+  description="See before-and-after smile transformations from SmileGram Dental, including whitening, veneers, Invisalign, and restorative dental treatments."
+  path="/transformations"
+/>
       {/* Hero */}
       <section className="section-padding porcelain-bg porcelain-grid">
         <div className="container-wide">
@@ -73,7 +79,7 @@ const Transformations = () => {
                   <div className="relative aspect-[16/10] bg-muted overflow-hidden">
                     <img
                       src={smilePortrait}
-                      alt={item.title}
+                      alt={`${item.title} before and after dental transformation at SmileGram Dental`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

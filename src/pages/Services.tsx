@@ -3,6 +3,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import BookingModal from "@/components/BookingModal";
 import BookingCTA from "@/components/home/BookingCTA";
 import { ArrowRight } from "lucide-react";
+import Seo from "@/components/Seo";
 
 const servicesData = [
   {
@@ -85,6 +86,11 @@ const Services = () => {
 
   return (
     <main className="pt-20">
+      <Seo
+  title="Dental Services"
+  description="Explore SmileGram Dental services in Petaling Jaya, including Invisalign, braces, veneers, whitening, implants, scaling and polishing, and kids dentistry."
+  path="/services"
+/>
       {/* Hero */}
       <section className="section-padding porcelain-bg porcelain-grid">
         <div className="container-wide">

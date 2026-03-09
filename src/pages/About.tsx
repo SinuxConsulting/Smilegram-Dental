@@ -2,10 +2,16 @@ import ScrollReveal from "@/components/ScrollReveal";
 import BookingCTA from "@/components/home/BookingCTA";
 import clinicInterior from "@/assets/clinic-interior.jpg";
 import heroClinic from "@/assets/hero-clinic.jpg";
+import Seo from "@/components/Seo";
 
 const About = () => {
   return (
     <main className="pt-20">
+      <Seo
+  title="About SmileGram Dental"
+  description="Learn about SmileGram Dental, our comfort-first philosophy, modern clinic environment, and patient-focused approach to aesthetic and general dentistry."
+  path="/about"
+/>
       {/* Hero */}
       <section className="section-padding porcelain-bg">
         <div className="container-wide">
@@ -27,7 +33,11 @@ const About = () => {
                 </p>
               </div>
               <div className="rounded-sm overflow-hidden shadow-premium">
-                <img src={clinicInterior} alt="SmileGram Dental clinic interior" className="w-full h-full object-cover aspect-[4/3]" />
+                <img
+  src={clinicInterior}
+  alt="Wide view of the SmileGram Dental clinic interior designed for a calm patient experience"
+  className="w-full h-full object-cover aspect-[4/3]"
+/>
                 <p className="font-body text-xs text-muted-foreground/50 text-center py-2 italic">
                   Replace with clinic interior wide shot
                 </p>
@@ -79,20 +89,28 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <ScrollReveal>
               <div className="rounded-sm overflow-hidden aspect-[4/3] bg-muted">
-                <img src={heroClinic} alt="Treatment room" className="w-full h-full object-cover" />
+                <img
+  src={heroClinic}
+  alt="SmileGram Dental treatment room with modern equipment and warm lighting"
+  className="w-full h-full object-cover"
+/>
               </div>
               <p className="font-body text-xs text-muted-foreground/50 mt-2 italic">Replace with clinic treatment room photo</p>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <div className="rounded-sm overflow-hidden aspect-[4/3] bg-muted">
-                <img src={clinicInterior} alt="Waiting area" className="w-full h-full object-cover" />
+                <img
+  src={clinicInterior}
+  alt="SmileGram Dental waiting area with a calm and minimalist clinic design"
+  className="w-full h-full object-cover"
+/>
               </div>
               <p className="font-body text-xs text-muted-foreground/50 mt-2 italic">Replace with clinic waiting area photo</p>
             </ScrollReveal>
           </div>
         </div>
       </section>
-
+      
       <BookingCTA />
     </main>
   );

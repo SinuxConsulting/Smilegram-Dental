@@ -12,6 +12,7 @@ import Transformations from "./pages/Transformations";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Index />} />
@@ -32,7 +34,6 @@ const App = () => (
         </Routes>
         <Footer />
         <MobileBottomBar />
-        {/* Spacer for mobile bottom bar */}
         <div className="h-16 md:hidden" />
       </BrowserRouter>
     </TooltipProvider>

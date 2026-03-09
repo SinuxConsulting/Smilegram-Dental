@@ -109,12 +109,12 @@ const HeroSection = () => {
               <div className="relative rounded-sm overflow-hidden shadow-premium aspect-[3/4]">
                 <img
                   src={heroImage}
-                  alt="SmileGram Dental modern clinic interior"
+                  alt="Modern SmileGram Dental treatment room interior in Petaling Jaya"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 via-foreground/5 to-transparent" />
               </div>
-
+              
               {/* Floating accent card */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
