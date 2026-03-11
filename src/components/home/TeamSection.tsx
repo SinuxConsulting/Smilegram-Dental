@@ -1,6 +1,7 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import { Award, GraduationCap, Heart } from "lucide-react";
 import dentistPortrait from "@/assets/dentist-portrait.jpg";
+import dentistPortrait1 from "@/assets/dentist-portrait1.jpg";
 
 const team = [
   {
@@ -19,7 +20,7 @@ const team = [
     registrations: "MDC Registered · Invisalign Certified",
     specialties: ["Invisalign", "Braces", "Aligners"],
     approach: "Specialises in creating beautiful, functional smiles with a focus on patient comfort and aesthetics. Passionate about making orthodontic care accessible.",
-    image: null,
+    image: dentistPortrait1,
   },
 ];
 
